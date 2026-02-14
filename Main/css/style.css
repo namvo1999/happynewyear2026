@@ -246,6 +246,48 @@ body {
   50% { background-position: 100% 100%; }
 }
 
+/* Credits */
+.credits {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+  pointer-events: auto;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: right;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.credits-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.credits-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  line-height: 1.6;
+}
+
+.credits-details div {
+  margin-bottom: 0.2rem;
+}
+
+.credits:hover {
+  color: rgba(255, 215, 0, 0.8);
+}
+
+.credits:hover .credits-details {
+  opacity: 1;
+  max-height: 100px;
+}
+
 .stage-container {
   overflow: hidden;
   box-sizing: initial;
